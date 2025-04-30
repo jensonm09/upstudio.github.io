@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Add this inside <head> -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Developer</title>
+    <style>
+       body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+     header {
+    position: relative;
+    background: url('header-image.jpg') no-repeat center center/cover;
+    color: white;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+    z-index: 1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.header-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.header-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+.project {
+    margin: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.project h3,
+.project p {
+    padding: 0 20px 10px 20px;
+    text-align: center;
+}
+
+.project h3 {
+    margin-top: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.project p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+}
+
+        .project img {
+            width: 100%;
+            height: auto;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+		
+
+    </style>
+</head>
+<body>
+      <header>
+    <div class="header-content">
+        <h1>Welcome to Our Property Development</h1>
+        <p>Building the future, one project at a time.</p>
+    </div>
+</header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+   <section id="about">
+    <h2>About Us</h2>
+    <p>Based in Kuching, Sarawak, we are a passionate property development company dedicated to shaping vibrant and sustainable communities. With a strong focus on quality craftsmanship, innovative design, and long-term value, our developments are built to elevate lifestyles and meet the needs of modern homeowners. From affordable housing to premium residences, we strive to deliver projects that our buyers are proud to call home.</p>
+</section>
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <div class="projects">
+         <div class="project">
+    <img src="project1.jpg" alt="Taman Seri Sutera">
+    <h3>Taman Seri Sutera</h3>
+    <p>Elegant double-storey terrace homes nestled in the heart of Kuching's vibrant Jalan Sultan Tengah. Ideal for growing families seeking modern comfort and convenience.</p>
+</div>
+<div class="project">
+    <img src="project2.jpg" alt="Sapphire Residences">
+    <h3>Sapphire Residences</h3>
+    <p>Stylish and spacious homes located in Batu Kawa, offering serene surroundings and easy access to key amenities. Experience refined living in a secure gated community.</p>
+</div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@propertydeveloper.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Property Developer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+S
